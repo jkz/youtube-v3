@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My Uploads</title>
+    <link rel="stylesheet" type="text/css" href="/css/my_uploads.css">
+  </head>
+  <body>
+    <div id="login-container" class="pre-auth">
+      This application requires access to your YouTube account.
+      Please <a href="#" id="login-link">authorize</a> to continue.
+    </div>
+
+	<div id="player"></div>
+	<div id="videoPlayer"></div>
+	<ul id="ul1"> </ul>
+	<a href="javascript:livestream(itvghana);">Play Live Video</a>
+    	<a href="javascript:playVideo('bHQqvYy5KYo')">Play This Video</a>
+         <div id="video-container"></div>
+         <div id="search-container"></div>
+	 <div class="button-container">
+      <button id="prev-button" class="paging-button" onclick="previousPage();">Previous Page</button>
+      <button id="next-button" class="paging-button" onclick="nextPage();">Next Page</button>
+    </div>
+
+     <div id="buttons">
+      <label> <input id="query" value='cats' type="text"/><button id="search-button" disabled onclick="search()">Search</button></label>
+    </div>
+    <div id="search-container">
+    </div>
+    
+   
+<hr />
+<div id="play1">
+<table style="width: 100%; margin-left: auto; margin-right: auto;" border="0">
+<tbody>
+<tr>
+<td style="text-align: left;">          <span style="color: #ccffcc;">PLAYLIST</span>    <a href="javascript:clearPlaylist('playlist');" style="font-size: 100%;">Clear</a></td>
+</tr>
+<tr>
+<td>
+<ul id="ul3" class="playlistBottom"></ul>
+<div><span style="color: #c0c0c0;"><span style="font-size: x-small;">To create a playlist, drag and drop the videos from the channels block into the</span> <span style="color: #99cc00;"><strong>Playlist Block</strong></span> <span style="font-size: x-small;">above.</span></span><form id="navigationForm"><input id="clearPlaylist" style="display: none;" onclick="javascript:clearPlaylist('playlist');" type="button" value="Clear Playlist" /></form></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="text-align: left; margin-top: 0px;"><input id="nextbt" onclick="createPlaylistToggle(this,'Close Playlist','Create Playlist')" type="button" name="button2" value="Close Playlist" /></div>
+	
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/auth.js"></script>
+    <script type="text/javascript" src="/php/youtube1.php"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+    <script type="text/javascript" src="http://yui.yahooapis.com/2.2.2/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+<script type="text/javascript" src="http://yui.yahooapis.com/2.2.2/build/animation/animation-min.js"></script>
+<script type="text/javascript" src="http://yui.yahooapis.com/2.2.2/build/dragdrop/dragdrop-min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.2.2/build/fonts/fonts-min.css"> 
+<link rel="stylesheet" type="text/css" href="/css/ytcss.css">
+  </body>
+</html>
+
